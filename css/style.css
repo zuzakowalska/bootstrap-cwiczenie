@@ -1,0 +1,243 @@
+
+
+
+* {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto Slab", serif;
+	color: #777;
+    
+}
+
+h1 {
+	font-size: 6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: "Droid Serif", serif;
+}
+
+h3 {
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+h4 {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+h3 + p {
+    font-family: "Droid Serif", serif;
+    color: #777;
+}
+
+section {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.row {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+a.btn-blue, .btn-blue {
+	background-color: #8ed8d6;
+	border: 1px solid #8ed8d6;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	transition: all .3s;
+}
+ 
+a.btn-blue:hover, .btn-blue:hover {
+	background-color: #fff;
+	border: 1px solid #0ed8d6;
+	color: #0ed8d6;
+}
+/* Main nav style start */
+#main nav {
+	background-color: transparent;
+	border: 0;
+	
+}
+
+#main-nav a.navbar-brand {
+	font-size: 2em;
+	font-family: "Droid Serif", sans-serif;
+	text-transform: none;
+}
+
+#main-nav a {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+}
+
+#main-nav a:hover {
+	color:#8ed8d6;
+		
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+#main-header {
+	height: 100vh;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+		url(../img/header/pictures_on_the_wall.jpg);
+		background-size: cover;
+		position: relative;
+}
+		
+#main-header .header-caption {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			right: 0;
+			margin: auto;
+			text-align: center;
+	        color: #fff;
+			
+	}
+
+/* Main nav style stop */
+
+/*services section start*/
+
+#services .glyphicon {
+    background: #8ed8d6;
+    padding: 0.5em;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+
+}
+
+#services .glyphicon:hover {
+    animation: rotate-icon .5s ease;
+}
+
+@keyframes rotate-icon {
+      0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+    background-color: #fff;
+    border: 1px solid #8ed8d6;
+    color: #8ed8d6
+  }
+}
+
+/*services section stop*/
+
+/*portfolio section start*/
+
+#portfolio {
+    background-color: #fbfbfb;
+}
+
+.thumbnail {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 100%;
+    border: 0px;
+    background-color: #fff;
+    
+}
+
+
+.caption-header {
+    font-family: "Montserrat", sans-serif;
+}
+
+.caption-header + p {
+    font-family: "Droid Serif", serif;
+}
+
+.portfolio-item {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-item-1 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+.portfolio-item-2 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+.portfolio-item-3 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+.portfolio-item-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+.portfolio-item-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+.portfolio-item-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+.portfolio-hover {
+    background-color: rgba(14, 214, 216, 0.7);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 3em;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-hover:hover {
+    opacity: 1;
+    transition: opacity .5s
+}
+
+.caption-header {
+    margin-top: 1em;
+}
+
+
+/*portfolio section stop*/
+
+/*team section start*/
+
+.team-item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    
+}
+
+.team-item-1 {
+    background-image: url(../img/team/man-1.jpg);
+}
